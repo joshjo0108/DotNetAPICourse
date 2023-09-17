@@ -58,8 +58,8 @@ namespace HelloWorld
             // Console.WriteLine(myDouble - mySecondDouble);
             // Console.WriteLine(myDecimal - mySecondDecimal);
 
-
-
+            char singleQuoteChar = 'a';
+            // Need to be a double QUOTE
             string myString = "Hello World";
             // Console.WriteLine(myString);
             string myStringWithSymbols = "!@#$@^$%%^&(&%^*__)+%^@##$!@%123589071340698ughedfaoig137";
@@ -69,16 +69,21 @@ namespace HelloWorld
 
 
 
-
+            // DATA STRUCTURES
+            // ARRAY METHOD 1
             string[] myGroceryArray = new string[2];
 
             myGroceryArray[0] = "Guacamole";
+            myGroceryArray[1] = "Chips";
+
+            // OUT OF BOUNDS?
             // myGroceryArray[2] = "Ice Cream";
 
             // Console.WriteLine(myGroceryArray[0]);
             // Console.WriteLine(myGroceryArray[1]);
             // Console.WriteLine(myGroceryArray[2]);
 
+            // ARRAY METHOD 2 -- Seems to be a better option
             string[] mySecondGroceryArray = { "Apples", "Eggs" };
 
             // mySecondGroceryArray[2] = ""; //Error
