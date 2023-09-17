@@ -92,6 +92,7 @@ namespace HelloWorld
             // Console.WriteLine(mySecondGroceryArray[1]);
             // Console.WriteLine(mySecondGroceryArray[2]); //Error
 
+            // DOESN'T NEED AN INITIAL VALUE
             List<string> myGroceryList = new List<string>() { "Milk", "Cheese" };
 
             // Console.WriteLine(myGroceryList[0]);
@@ -99,10 +100,12 @@ namespace HelloWorld
 
             // Console.WriteLine(myGroceryList[2]); //Error
 
+            // ADD to a LIST
             myGroceryList.Add("Oranges");
 
             // Console.WriteLine(myGroceryList[2]);
 
+            // ESSENTIAL WHEN LOOPING THROUGH
             IEnumerable<string> myGroceryIEnumerable =  myGroceryList;
 
             // Console.WriteLine(myGroceryIEnumerable.First());
@@ -114,6 +117,7 @@ namespace HelloWorld
 
             // Console.WriteLine(myTwoDimensionalArray[1,1]);
 
+            // KEY & VALUE PAIR
             Dictionary<string, string[]> myGroceryDictionary = new Dictionary<string, string[]>(){
                 {"Dairy", new string[]{"Cheese", "Milk", "Eggs"}}
             };
