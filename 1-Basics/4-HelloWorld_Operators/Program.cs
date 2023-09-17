@@ -74,6 +74,7 @@ namespace HelloWorld
             string[] myStringArr = myString.Split(". ");
             Console.WriteLine(myStringArr[0]);
             Console.WriteLine(myStringArr[1]);
+            Console.WriteLine(myStringArr[2]);
 
 
 
