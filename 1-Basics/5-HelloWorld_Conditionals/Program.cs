@@ -33,7 +33,7 @@ namespace HelloWorld
                 Console.WriteLine("Not Equal");
             }
 
-
+            // Only when defined sets of values are presented
             switch (myCow)
             {
                 case "cow":

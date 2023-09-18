@@ -23,7 +23,10 @@ namespace HelloWorld
             Console.WriteLine(myInt <= mySecondInt);
             Console.WriteLine(myInt < mySecondInt);
 
+            // BOTH HAS TO BE TRUE TO RETURN TRUE
             Console.WriteLine(5 > 10 && 5 < 10);
+            // EITHER HAS TO BE TRUE TO RETURN TRUE
+            Console.WriteLine(5 > 10 || 5 < 10);
 
 
             //Mathematical Operators
