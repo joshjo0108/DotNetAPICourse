@@ -5,6 +5,7 @@ namespace HelloWorld
 {
     public class Computer
     {
+        // ATTRIBUTES ---------------
         // private string _motherboard;
         public string Motherboard { get; set; }
         public int CPUCores { get; set; }
@@ -18,7 +19,8 @@ namespace HelloWorld
         {
             if (VideoCard == null)
             {
-                VideoCard = "";
+                // Set as DEFAULT
+                VideoCard = "xxxxx";
             }
             if (Motherboard == null)
             {
@@ -37,7 +39,7 @@ namespace HelloWorld
                 HasLTE = false,
                 ReleaseDate = DateTime.Now,
                 Price = 943.87m,
-                VideoCard = "RTX 2060"
+                // VideoCard = "RTX 2060"
             };
             myComputer.HasWifi = false;
             Console.WriteLine(myComputer.Motherboard);

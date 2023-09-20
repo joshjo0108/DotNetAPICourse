@@ -32,7 +32,7 @@ namespace HelloWorld
 
             Console.WriteLine(totalValue);
 
-            //146
+            // FOR LOOP ----------------------------------------------
 
             totalValue = 0;
 
@@ -47,7 +47,7 @@ namespace HelloWorld
 
             Console.WriteLine(totalValue);
 
-
+            // FOR EACH ---------------------------------------------- TWICE Faster than For Loop
             totalValue = 0;
 
             startTime = DateTime.Now;
@@ -61,11 +61,13 @@ namespace HelloWorld
 
             Console.WriteLine(totalValue);
 
+            // WHILE ----------------------------------------------
 
             totalValue = 0;
 
             startTime = DateTime.Now;
 
+            // INDEX variable has to be mentioned first before running while loop
             int index = 0;
 
             while(index < intsToCompress.Length)
@@ -74,10 +76,12 @@ namespace HelloWorld
                 index++;
             }
 
-
             Console.WriteLine((DateTime.Now - startTime).TotalSeconds);
 
             Console.WriteLine(totalValue);
+
+            // DO WHILE ----------------------------------------------
+
             totalValue = 0;
 
             startTime = DateTime.Now;
@@ -96,6 +100,8 @@ namespace HelloWorld
             Console.WriteLine(totalValue);
 
 
+            // USE BUILT IN FUNCTION -----------------------------------
+            
             startTime = DateTime.Now;
 
             totalValue = 0;
