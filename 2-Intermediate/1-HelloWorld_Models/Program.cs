@@ -7,26 +7,26 @@ namespace HelloWorld
     {
         // ATTRIBUTES ---------------
         // private string _motherboard;
-        public string Motherboard { get; set; }
+        public string Motherboard { get; set; } = "";
         public int CPUCores { get; set; }
         public bool HasWifi { get; set; }
         public bool HasLTE { get; set; }
         public DateTime ReleaseDate { get; set; }
         public decimal Price { get; set; }
-        public string VideoCard { get; set; }
+        public string VideoCard { get; set; }  = "";
 
-        public Computer()
-        {
-            if (VideoCard == null)
-            {
-                // Set as DEFAULT
-                VideoCard = "xxxxx";
-            }
-            if (Motherboard == null)
-            {
-                Motherboard = "";
-            }
-        }
+        // public Computer()
+        // {
+        //     if (VideoCard == null)
+        //     {
+        //         // Set as DEFAULT
+        //         VideoCard = "xxxxx";
+        //     }
+        //     if (Motherboard == null)
+        //     {
+        //         Motherboard = "";
+        //     }
+        // }
     }
     internal class Program
     {

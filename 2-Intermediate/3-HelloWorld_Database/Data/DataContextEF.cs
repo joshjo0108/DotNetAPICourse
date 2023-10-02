@@ -12,8 +12,8 @@ namespace HelloWorld.Data
         {
             if (!options.IsConfigured)
             {
-                // options.UseSqlServer("Server=localhost;Database=DotNetCourseDatabase;Trusted_connection=false;TrustServerCertificate=True;User Id=sa;Password=SQLConnect1;",
-                options.UseSqlServer("Server=localhost;Database=DotNetCourseDatabase;Trusted_Connection=true;TrustServerCertificate=true;",
+                options.UseSqlServer("Server=localhost;Database=DotNetCourseDatabase;Trusted_connection=false;TrustServerCertificate=True;User Id=sa;Password=SQLConnect1;",
+                // options.UseSqlServer("Server=localhost;Database=DotNetCourseDatabase;Trusted_Connection=true;TrustServerCertificate=true;",
                     options => options.EnableRetryOnFailure());
             }
         }
@@ -22,6 +22,7 @@ namespace HelloWorld.Data
         {
             modelBuilder.HasDefaultSchema("TutorialAppSchema");
 
+// NEED to define whether it has a key or not for Entity Framework way.
             modelBuilder.Entity<Computer>()
                 // .HasNoKey()
                 .HasKey(c => c.ComputerId);

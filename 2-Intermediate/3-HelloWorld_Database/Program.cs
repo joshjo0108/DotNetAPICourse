@@ -14,6 +14,7 @@ namespace HelloWorld
     {
         static void Main(string[] args)
         {
+            // THIS is from "using HelloWorld.Data;"
             DataContextDapper dapper = new DataContextDapper();
             DataContextEF entityFramework = new DataContextEF();
 
@@ -21,6 +22,7 @@ namespace HelloWorld
 
             // Console.WriteLine(rightNow.ToString());
             
+            // THIS is from "using HelloWorld.Models;"
             Computer myComputer = new Computer() 
             {
                 Motherboard = "Z690",
@@ -86,8 +88,11 @@ namespace HelloWorld
 
             if (computersEf != null)
             {
+                // Header of the Output
                 Console.WriteLine("'ComputerId','Motherboard','HasWifi','HasLTE','ReleaseDate'" 
                     + ",'Price','VideoCard'");
+
+                // Loop through the data
                 foreach(Computer singleComputer in computersEf)
                 {
                     Console.WriteLine("'" + singleComputer.ComputerId 
