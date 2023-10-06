@@ -42,14 +42,14 @@ namespace HelloWorld
                     + "','" + myComputer.VideoCard
             + "')";
 
+// WRITING: Name of the File, Pass a String
             File.WriteAllText("log.txt", "\n" + sql + "\n");
 
             using StreamWriter openFile = new("log.txt", append: true);
-
             openFile.WriteLine("\n" + sql + "\n");
-
             openFile.Close();
 
+// READING
             string fileText = File.ReadAllText("log.txt");
 
             Console.WriteLine(fileText);

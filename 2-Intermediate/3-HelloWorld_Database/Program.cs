@@ -33,9 +33,11 @@ namespace HelloWorld
                 VideoCard = "RTX 2060"
             };
 
+// THIS IS USING ENTITY FRAMEWORK
             entityFramework.Add(myComputer);
             entityFramework.SaveChanges();
 
+// THIS IS USING DAPPER
             string sql = @"INSERT INTO TutorialAppSchema.Computer (
                 Motherboard,
                 HasWifi,

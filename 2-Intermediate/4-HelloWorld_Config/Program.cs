@@ -14,6 +14,7 @@ namespace HelloWorld
     {
         static void Main(string[] args)
         {
+            // Make sure to : dotnet add package Microsoft.Extensions.Configuration.Json
             IConfiguration config = new ConfigurationBuilder()
                 .AddJsonFile("appSettings.json")
                 .Build();
