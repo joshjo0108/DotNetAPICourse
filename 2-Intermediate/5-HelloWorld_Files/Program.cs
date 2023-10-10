@@ -51,7 +51,6 @@ namespace HelloWorld
 
 // READING
             string fileText = File.ReadAllText("log.txt");
-
             Console.WriteLine(fileText);
 
         }

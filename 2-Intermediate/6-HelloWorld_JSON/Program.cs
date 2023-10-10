@@ -50,11 +50,15 @@ namespace HelloWorld
 
             // Console.WriteLine(computersJson);
 
+// OPTION 1.
             JsonSerializerOptions options = new JsonSerializerOptions()
             {
                 PropertyNamingPolicy = JsonNamingPolicy.CamelCase
             };
 
+// Value that could also hold NULL value "computerNewtonSoft"
+// dotnet add package Newtonsoft.Json
+// OPTION 2.
             IEnumerable<Computer>? computersNewtonSoft = JsonConvert.DeserializeObject<IEnumerable<Computer>>(computersJson);
 
             IEnumerable<Computer>? computersSystem = System.Text.Json.JsonSerializer.Deserialize<IEnumerable<Computer>>(computersJson, options);
@@ -84,6 +88,8 @@ namespace HelloWorld
                 }
             }
 
+
+// Converting to TXT file using Serialisation
             JsonSerializerSettings settings = new JsonSerializerSettings()
             {
                 ContractResolver = new CamelCasePropertyNamesContractResolver()
