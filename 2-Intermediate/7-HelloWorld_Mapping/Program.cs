@@ -70,6 +70,7 @@ namespace HelloWorld
                         options.MapFrom(source => source.price));
             }));
             
+        // METHOD 1
             IEnumerable<ComputerSnake>? computersSystem = System.Text.Json.JsonSerializer.Deserialize<IEnumerable<ComputerSnake>>(computersJson);
 
             if (computersSystem != null)
@@ -82,6 +83,7 @@ namespace HelloWorld
                 // }
             }
 
+        // METHOD 2 - Much BETTER!!!
             IEnumerable<Computer>? computersJsonPropertyMapping = System.Text.Json.JsonSerializer.Deserialize<IEnumerable<Computer>>(computersJson);
             if (computersJsonPropertyMapping != null)
             {
