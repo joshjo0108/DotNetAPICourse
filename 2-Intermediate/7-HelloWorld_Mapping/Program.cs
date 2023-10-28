@@ -48,6 +48,8 @@ namespace HelloWorld
 
             string computersJson = File.ReadAllText("ComputersSnake.json");
 
+// ComputerSnake: Source
+// Computer: Destination
             Mapper mapper = new Mapper(new MapperConfiguration((cfg) => {
                 cfg.CreateMap<ComputerSnake, Computer>()
                     .ForMember(destination => destination.ComputerId, options => 
